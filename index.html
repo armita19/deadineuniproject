@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackboard Submission</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--So my Idea for this assignment was to create a page that's lowkey similar to blackboard 
+where there's a text box for your assignment and a submit button to submit it- except, 
+everytime you hover over the button to submit, it instantly moves away while there's a pop up message 
+and a timer going off to stress you further, I definitely used my stress over assignmens as inspiration here lol🥹😂-->
+<body>
+    <div class="container"> 
+        <h2>Assignment Submission</h2>
+        <p>Submit your assignment before the due date: 21/02/2025 at 11:59 pm</p>
+        <!--The class/id below is for the timer, S stands for seconds-->
+        <div class="timer">Time Left: <span id="time">30</span>s</div>
+        <!--A useless submission text box to mimic blackboard's submission box-->
+        <textarea placeholder="Enter your submission details..." readonly></textarea>
+        <!--Class wrapper to style and control the submission button properly-->
+        <div class="button-wrapper">
+            <button id="submitButton">Submit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
